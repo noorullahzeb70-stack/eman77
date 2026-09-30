@@ -1,0 +1,208 @@
+/* ═══════════════════════════════════════════════════════════════════
+   EMAN Design Tokens
+   Brand: deep emerald (knowledge, trust) + warm gold (light, warmth)
+   Themes: light (default) and dark, switched with <html data-theme>.
+   ═══════════════════════════════════════════════════════════════════ */
+
+:root {
+  /* ── Brand scales ── */
+  --emerald-50: #ecfdf7;
+  --emerald-100: #d1f7ea;
+  --emerald-200: #a6ecd6;
+  --emerald-300: #6ddbbd;
+  --emerald-400: #34c29f;
+  --emerald-500: #14a386;
+  --emerald-600: #0b836d;
+  --emerald-700: #0c6959;
+  --emerald-800: #0e5448;
+  --emerald-900: #0d453c;
+  --emerald-950: #042822;
+
+  --gold-50: #fdf8ec;
+  --gold-100: #faedc9;
+  --gold-200: #f4d98f;
+  --gold-300: #eec155;
+  --gold-400: #e8a92f;
+  --gold-500: #d48a18;
+  --gold-600: #b56912;
+  --gold-700: #924b13;
+
+  --ink-0: #ffffff;
+  --ink-25: #fbfbfa;
+  --ink-50: #f6f6f4;
+  --ink-100: #ecedea;
+  --ink-200: #dcdeda;
+  --ink-300: #c2c6c1;
+  --ink-400: #979d97;
+  --ink-500: #6f766f;
+  --ink-600: #555c56;
+  --ink-700: #3f4541;
+  --ink-800: #272c29;
+  --ink-850: #1b201e;
+  --ink-900: #131715;
+  --ink-950: #0b0e0d;
+
+  /* ── Typography ── */
+  --font-sans: 'Plus Jakarta Sans', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans', 'Noto Sans Arabic', sans-serif;
+  --font-display: 'Fraunces', 'Iowan Old Style', 'Palatino Linotype', Georgia, serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: clamp(1.75rem, 1.4rem + 1.5vw, 2.25rem);
+  --text-4xl: clamp(2.1rem, 1.6rem + 2.4vw, 3rem);
+  --text-5xl: clamp(2.6rem, 1.8rem + 4vw, 4.5rem);
+
+  /* ── Spacing (4px base) ── */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+
+  /* ── Shape ── */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 999px;
+
+  /* ── Motion ── */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast: 120ms;
+  --dur-base: 200ms;
+  --dur-slow: 360ms;
+
+  /* ── Layout ── */
+  --container: 1200px;
+  --header-h: 64px;
+  --bottom-nav-h: 64px;
+  --sidebar-w: 280px;
+
+  /* ═══ LIGHT THEME (semantic) ═══ */
+  color-scheme: light;
+  --bg: var(--ink-25);
+  --bg-subtle: var(--ink-50);
+  --bg-muted: var(--ink-100);
+  --surface: var(--ink-0);
+  --surface-raised: var(--ink-0);
+  --surface-glass: rgb(255 255 255 / 0.72);
+  --overlay: rgb(11 14 13 / 0.45);
+
+  --text: var(--ink-900);
+  --text-muted: var(--ink-600);
+  --text-subtle: var(--ink-500);
+  --text-inverse: var(--ink-0);
+
+  --border: var(--ink-200);
+  --border-strong: var(--ink-300);
+  --ring: rgb(20 163 134 / 0.45);
+
+  --primary: var(--emerald-700);
+  --primary-hover: var(--emerald-800);
+  --primary-soft: var(--emerald-50);
+  --primary-soft-text: var(--emerald-800);
+  --on-primary: #ffffff;
+
+  --accent: var(--gold-500);
+  --accent-soft: var(--gold-50);
+  --accent-soft-text: var(--gold-700);
+
+  --success: #15803d;
+  --success-soft: #ecfdf3;
+  --warning: #b45309;
+  --warning-soft: #fffbeb;
+  --danger: #c2410c;
+  --danger-strong: #b42318;
+  --danger-soft: #fef3f2;
+  --info: #1d63c9;
+  --info-soft: #eff6ff;
+
+  --shadow-sm: 0 1px 2px rgb(19 23 21 / 0.06), 0 1px 1px rgb(19 23 21 / 0.04);
+  --shadow-md: 0 4px 12px -2px rgb(19 23 21 / 0.08), 0 2px 4px -2px rgb(19 23 21 / 0.05);
+  --shadow-lg: 0 16px 40px -12px rgb(19 23 21 / 0.18), 0 4px 10px -4px rgb(19 23 21 / 0.06);
+  --shadow-glow: 0 10px 40px -10px rgb(11 131 109 / 0.45);
+
+  --gradient-brand: linear-gradient(135deg, var(--emerald-600) 0%, var(--emerald-800) 60%, var(--emerald-900) 100%);
+  --gradient-warm: linear-gradient(135deg, var(--gold-300), var(--gold-500));
+  --gradient-hero:
+    radial-gradient(60% 60% at 15% 10%, rgb(52 194 159 / 0.18), transparent 70%),
+    radial-gradient(50% 50% at 90% 20%, rgb(232 169 47 / 0.14), transparent 70%),
+    radial-gradient(70% 60% at 50% 100%, rgb(11 131 109 / 0.10), transparent 70%);
+
+  --code-bg: var(--ink-900);
+  --code-text: #e6ebe8;
+}
+
+/* ═══ DARK THEME ═══ */
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --bg: var(--ink-950);
+  --bg-subtle: var(--ink-900);
+  --bg-muted: var(--ink-850);
+  --surface: var(--ink-900);
+  --surface-raised: var(--ink-850);
+  --surface-glass: rgb(19 23 21 / 0.7);
+  --overlay: rgb(0 0 0 / 0.6);
+
+  --text: #eef1ef;
+  --text-muted: #a9b0ab;
+  --text-subtle: #858c87;
+  --text-inverse: var(--ink-950);
+
+  --border: #262c29;
+  --border-strong: #353c38;
+  --ring: rgb(52 194 159 / 0.5);
+
+  --primary: var(--emerald-400);
+  --primary-hover: var(--emerald-300);
+  --primary-soft: rgb(20 163 134 / 0.14);
+  --primary-soft-text: var(--emerald-200);
+  --on-primary: var(--emerald-950);
+
+  --accent: var(--gold-300);
+  --accent-soft: rgb(232 169 47 / 0.14);
+  --accent-soft-text: var(--gold-200);
+
+  --success: #4ade80;
+  --success-soft: rgb(74 222 128 / 0.12);
+  --warning: #fbbf24;
+  --warning-soft: rgb(251 191 36 / 0.12);
+  --danger: #fb7c5c;
+  --danger-strong: #f97066;
+  --danger-soft: rgb(249 112 102 / 0.12);
+  --info: #6ea8fe;
+  --info-soft: rgb(110 168 254 / 0.12);
+
+  --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.4);
+  --shadow-md: 0 4px 14px -2px rgb(0 0 0 / 0.5);
+  --shadow-lg: 0 20px 50px -12px rgb(0 0 0 / 0.7);
+  --shadow-glow: 0 10px 40px -10px rgb(52 194 159 / 0.35);
+
+  --gradient-brand: linear-gradient(135deg, var(--emerald-400) 0%, var(--emerald-600) 60%, var(--emerald-700) 100%);
+  --gradient-hero:
+    radial-gradient(60% 60% at 15% 10%, rgb(52 194 159 / 0.14), transparent 70%),
+    radial-gradient(50% 50% at 90% 20%, rgb(232 169 47 / 0.08), transparent 70%),
+    radial-gradient(70% 60% at 50% 100%, rgb(11 131 109 / 0.12), transparent 70%);
+
+  --code-bg: #080a09;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --dur-fast: 0ms;
+    --dur-base: 0ms;
+    --dur-slow: 0ms;
+  }
+}

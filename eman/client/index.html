@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>EMAN — Your Intelligent Companion for Learning, Knowledge & Creativity</title>
+    <meta name="description" content="EMAN is an AI-powered education platform: ask questions, study smarter with AI tools, explore books, learning resources and more." />
+    <meta name="theme-color" content="#fbfbfa" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="EMAN" />
+    <meta property="og:title" content="EMAN — AI • Education • Knowledge • Creativity" />
+    <meta property="og:description" content="Your intelligent companion for learning, knowledge and creativity." />
+    <meta property="og:image" content="/icons/icon-512.png" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" />
+    <script>
+      (function () {
+        try {
+          var p = localStorage.getItem('eman-theme') || 'system';
+          var d = p === 'dark' || (p === 'system' && matchMedia('(prefers-color-scheme: dark)').matches);
+          document.documentElement.dataset.theme = d ? 'dark' : 'light';
+        } catch (e) {}
+      })();
+    </script>
+    <!--CSS-->
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div id="root"></div>
+    <noscript><p style="padding:24px">EMAN needs JavaScript enabled to run.</p></noscript>
+    <!--JS-->
+  </body>
+</html>

@@ -1,0 +1,31 @@
+{
+  "name": "eman",
+  "version": "0.1.0",
+  "private": true,
+  "description": "EMAN — AI • Education • Knowledge • Creativity",
+  "type": "module",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "dev": "node scripts/build.mjs --watch & tsx watch server/index.ts",
+    "build": "node scripts/build.mjs",
+    "start": "node --disable-warning=ExperimentalWarning dist/server.js",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "NODE_ENV=test node --disable-warning=ExperimentalWarning --import tsx --test tests/*.test.ts",
+    "db:migrate": "tsx server/db/migrate.ts",
+    "admin:create": "tsx scripts/create-admin.ts"
+  },
+  "dependencies": {
+    "marked": "^18.0.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "sharp": "^0.34.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "esbuild": "^0.27.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0"
+  }
+}
